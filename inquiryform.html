@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+       
+    
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pagestyle.css">
+</head>
+<style>
+    body {
+     background-image: url("img/backgroud.jpg");
+     justify-content: center;
+     background-size: cover;
+     color: black;
+     padding: 3rem 3rem;
+
+ }
+
+ .img {
+     height: 500px;
+     width: 370px;
+     /* padding: 4px px; */
+    
+
+ }
+
+ .container {
+     display: flex;
+     flex-direction: row;
+     border: 3px solid rgb(252, 251, 251);
+     height: 500px;
+    
+     justify-content: center;
+     width: 1200px;
+ }
+
+ .form {
+     padding: 30px 100px;
+     display: flex;
+     flex-direction: row;
+     gap: 2px 10px;
+ }
+
+ .form1 {
+     padding: 20px 40px;
+
+ }
+
+ .frm1 {
+     display: flex;
+     flex-direction: column;
+     
+
+ }
+
+ .formitem {
+     display: flex;
+     flex-direction: column;
+      /* justify-content: center; */
+     /* align-items: center;  */
+
+ }
+
+ .des textarea {
+     /* padding: 20px 40px; */
+     width: 500px;
+     height: 210px;
+     display: flex;
+     flex-direction: column;
+    
+     background: none;
+     resize: none;
+ }
+
+ .des {
+     padding: 15px 100px;
+     /* border-color: black; */
+     /* border:2px solid rgb(250, 249, 249) */
+ }
+
+ .form1,
+ .f1 {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding-left:100px;
+ }
+
+
+ .btn {
+     display: flex;
+     flex-direction: row;
+     gap: 10px 50px;
+     justify-content: center;
+     align-items: center;
+     /* height: 300px; */
+
+ }
+
+ button {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     width: 100px;
+     height: 30px;
+    
+     background: none;
+     color: black;
+     align-items: center;
+ }
+
+ .form,
+ input {
+     width: 240px;
+     
+     background: none;
+ }
+</style>
+
+<body>
+    <div class="container ">
+        <form action="process.php" method="post">
+        
+
+        <div class="formitem">
+            <div class="form">
+                <div class="frm1">
+                    <label for="form1">FIRST NAME</label>
+                    <input type="text" name="firstname" placeholder="FirstName">
+                </div>
+                <div class="frm1">
+                    <label for="form1">LastName</label>
+                    <input type="text" name="lastname" placeholder="LastName">
+                </div>
+            </div>
+            <div class="form">
+                <div class="frm1">
+                    <label for="f1">E-mail</label>
+                    <input type="email" name="email" placeholder="E-mail">
+                </div>
+                <div class="frm1">
+                    <label for="f1">Mobile</label>
+                    <input type="text" name="mobile" placeholder="Mobile">
+                </div>
+            </div>
+            <div class="des">
+                <label for="label">Message</label>
+                <textarea name="msg" placeholder="Write the message"></textarea>
+            </div>
+            <div class="btn">
+                <button name=submit>Submit</button>
+                <button name=cancle>Cancle</button>
+            </div>
+        </div>
+        </form>
+        
+    </div>
+
+</body>
+
+</html>
